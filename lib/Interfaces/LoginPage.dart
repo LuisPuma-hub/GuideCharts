@@ -3,7 +3,8 @@ import 'package:interfaces/my_flutter_app_icons.dart';
 import 'package:interfaces/Interfaces/register_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:interfaces/generated/l10n.dart';
-
+import 'package:interfaces/Interfaces/Home.dart';
+import 'package:interfaces/Interfaces/Recovery.dart';
 import 'package:interfaces/main.dart';
 
 class App extends StatelessWidget {
@@ -85,7 +86,9 @@ class _LoginState extends State<Login> {
                           padding: const EdgeInsets.symmetric(vertical: 15),
                           textColor: Colors.white,
                           onPressed: (){
-                            _login(context);
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => Home(),
+                            ));
                           },
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -153,7 +156,22 @@ class _LoginState extends State<Login> {
                             )
                           ],
                         ),
-
+                        SizedBox(height: 10,),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Text(S.of(context).loginRecovery),
+                          ],
+                        ),
+                        FlatButton(
+                          textColor: Theme.of(context).primaryColor,
+                          child: Text(S.of(context).loginbuttonrecovery),
+                          onPressed: (){
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => Recovery(),
+                            ));
+                          },
+                        )
                       ],
                     ),
                   ),
@@ -166,11 +184,4 @@ class _LoginState extends State<Login> {
     );
   }
 
-  void _login(BuildContext context) {
-    if (!_loading){
-      setState(() {
-        _loading=true;
-      });
-    }
-  }
 }

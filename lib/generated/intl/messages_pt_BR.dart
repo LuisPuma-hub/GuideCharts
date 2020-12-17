@@ -52,6 +52,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "loginPass" : MessageLookupByLibrary.simpleMessage("Senha"),
     "loginResgis" : MessageLookupByLibrary.simpleMessage("Cadastre"),
     "loginUs" : MessageLookupByLibrary.simpleMessage("Usuário"),
+    "loginRecovery" : MessageLookupByLibrary.simpleMessage("Você não lembra da sua senha?"),
+    "loginbuttonrecovery" : MessageLookupByLibrary.simpleMessage("Recuperação"),
     "menuCRUD" : MessageLookupByLibrary.simpleMessage("CRUD"),
     "menuLogin" : MessageLookupByLibrary.simpleMessage("Iniciar sessão"),
     "menuRecovery" : MessageLookupByLibrary.simpleMessage("Recuperar a conta"),

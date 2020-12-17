@@ -5,6 +5,8 @@
   "loginO": "O",
   "loginNotR": "¿Você não está registrado??",
   "loginResgis": "Cadastre",
+  "loginRecovery": "Você não lembra da sua senha?",
+  "loginbuttonrecovery": "Recuperação";
 
   "registerUs": "Do utilizador",
   "registerPass": "Senha",

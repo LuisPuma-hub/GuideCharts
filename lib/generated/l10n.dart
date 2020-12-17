@@ -45,6 +45,24 @@ class S {
     );
   }
 
+  String get loginRecovery{
+    return Intl.message(
+      'Do not you remember your password?',
+      name: 'loginRecovery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get loginbuttonrecovery{
+    return Intl.message(
+      'Recovery',
+      name: 'loginbuttonrecovery',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Password`
   String get loginPass {
     return Intl.message(

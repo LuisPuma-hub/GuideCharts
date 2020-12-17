@@ -18,7 +18,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: opciones(),
+      home: Login(),
       title: 'Flutter Intl Example',
 
       localizationsDelegates: [

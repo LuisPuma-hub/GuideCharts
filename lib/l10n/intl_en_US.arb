@@ -5,6 +5,8 @@
   "loginO": "Or",
   "loginNotR": "Not registered?",
   "loginResgis": "Sign up",
+  "loginRecovery": "Do not you remember your password?",
+  "loginbuttonrecovery": "Recovery";
 
   "registerUs": "User",
   "registerPass": "Password",
